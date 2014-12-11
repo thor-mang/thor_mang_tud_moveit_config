@@ -1,8 +1,8 @@
 moveit_setup_assistant_config:
   URDF:
-    package: thor_op_description
+    package: thor_mang_description
     relative_path: robots/thor_mang_tud_simple.urdf.xacro
   SRDF:
-    relative_path: config/thor_op_robot.srdf
+    relative_path: config/thor_mang_robot.srdf
   CONFIG:
     generated_timestamp: 1418232163
