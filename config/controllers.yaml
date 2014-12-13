@@ -1,5 +1,5 @@
  controller_list:
- - name: /thor/left_arm_traj_controller
+ - name: /thor_mang/left_arm_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true
@@ -12,7 +12,7 @@
       - l_wrist_roll
       - l_wrist_yaw2
        
- - name: /thor/right_arm_traj_controller
+ - name: /thor_mang/right_arm_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true
@@ -25,7 +25,7 @@
       - r_wrist_roll
       - r_wrist_yaw2
       
- - name: /thor/torso_traj_controller
+ - name: /thor_mang/torso_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
    default: true
