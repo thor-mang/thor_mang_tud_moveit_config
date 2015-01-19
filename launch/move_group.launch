@@ -1,5 +1,8 @@
 <launch>
 
+  <node pkg="tf" type="static_transform_publisher" name="world_to_pelvis_publisher" args="0 0 0.7 0 0 0 /world /pelvis 100"/>
+  <node name="joint_state_relay"  pkg="topic_tools" type="relay"  output="screen" args="/thor_mang/joint_states /joint_states"/>
+
   <include file="$(find thor_mang_tud_moveit_config)/launch/planning_context.launch" />
 
   <!-- GDB Debug Option -->
@@ -41,8 +44,6 @@
     <!-- Set the display variable, in case OpenGL code is used internally -->
     <env name="DISPLAY" value="$(optenv DISPLAY :0)" />
     
-    <remap from="joint_states" to="/thor_mang/joint_states" />
-
     <param name="allow_trajectory_execution" value="$(arg allow_trajectory_execution)"/>
     <param name="max_safe_path_cost" value="$(arg max_safe_path_cost)"/>
     <param name="jiggle_fraction" value="$(arg jiggle_fraction)" />
@@ -57,6 +58,7 @@
 				      move_group/MoveGroupQueryPlannersService
 				      move_group/MoveGroupStateValidationService
 				      move_group/MoveGroupGetPlanningSceneService
+				      move_group/ContinuousReplanningCapability
 				      " />
 
     <!-- Publish the planning scene of the physical robot so that rviz plugin can know actual robot -->
