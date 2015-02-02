@@ -39,5 +39,7 @@
 
   <!-- If database loading was enabled, start mongodb as well -->
   <include file="$(find thor_mang_tud_moveit_config)/launch/default_warehouse_db.launch" if="$(arg db)"/>
+  
+  <node pkg="tf" type="static_transform_publisher" name="world_to_pelvis_publisher" args="0 0 0.7 0 0 0 /world /pelvis 100"/>
 
 </launch>
