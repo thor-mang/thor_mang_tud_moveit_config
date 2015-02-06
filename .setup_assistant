@@ -5,4 +5,4 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/thor_mang_robot.srdf
   CONFIG:
-    generated_timestamp: 1422918916
+    generated_timestamp: 1423213624
