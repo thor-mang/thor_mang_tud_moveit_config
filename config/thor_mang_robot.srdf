@@ -9,6 +9,14 @@
     <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="head_group">
+        <joint name="head_pan" />
+        <joint name="head_tilt" />
+    </group>
+    <group name="torso_group">
+        <joint name="waist_pan" />
+        <joint name="waist_tilt" />
+    </group>  
     <group name="l_arm_group">
         <joint name="l_shoulder_pitch" />
         <joint name="l_shoulder_roll" />
@@ -42,6 +50,22 @@
         <joint name="l_knee" />
         <joint name="l_ankle_pitch" />
         <joint name="l_ankle_roll" />
+    </group>
+    <group name="l_arm_with_torso_group">
+        <group name="torso_group" />
+        <group name="l_arm_group" />
+    </group>
+    <group name="r_arm_with_torso_group">
+        <group name="torso_group" />
+        <group name="r_arm_group" />
+    </group>    
+    <group name="whole_body_group">
+        <group name="head_group" />
+        <group name="torso_group" />
+        <group name="l_arm_group" />
+        <group name="r_arm_group" />
+        <group name="r_leg_group" />
+        <group name="l_leg_group" />
     </group>
     <group name="all_appendages_group">
         <group name="l_arm_group" />

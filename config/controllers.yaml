@@ -1,4 +1,20 @@
- controller_list:
+controller_list: 
+ - name: /thor_mang/head_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - head_pan
+      - head_tilt    
+ 
+ - name: /thor_mang/torso_traj_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   default: true
+   joints:
+      - waist_pan
+      - waist_tilt    
+ 
  - name: /thor_mang/left_arm_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
@@ -25,15 +41,6 @@
       - r_wrist_roll
       - r_wrist_yaw2
       
- - name: /thor_mang/torso_traj_controller
-   action_ns: follow_joint_trajectory
-   type: FollowJointTrajectory
-   default: true
-   joints:
-      - waist_pan
-      - waist_tilt
-      
-
  - name: /thor_mang/left_leg_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory
