@@ -280,4 +280,8 @@
     <disable_collisions link1="utorso" link2="waist" reason="Adjacent" />
     <disable_collisions link1="utorso" link2="waist_hokuyo_laser_frame" reason="Adjacent" />
     <disable_collisions link1="waist" link2="waist_hokuyo_laser_frame" reason="Never" />
+    
+    <!--Custom disabled collisions. Possibly needs to manually be re-added after running setup assistant.-->
+    <disable_collisions link1="pelvis" link2="l_leg_thigh" reason="Never" />
+    <disable_collisions link1="pelvis" link2="r_leg_thigh" reason="Never" />
 </robot>
