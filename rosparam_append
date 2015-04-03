@@ -1,0 +1,77 @@
+#!/bin/bash
+# $0 is the script name, $1 id the first ARG, $2 is second...
+
+if [ "$2" = "" ]
+then
+  echo "Usage: $0 <filename> <namespace>"
+else
+  dump_command="rosparam dump"
+  load_command="rosparam load"
+  
+  FILE="$1"  
+  NAMESPACE="$2"
+
+  IS_NAMESPACE=$(rosparam list | /bin/egrep "$NAMESPACE")
+
+  if [ -z "$IS_NAMESPACE" ];
+  then
+    echo "No previous Namespace found, simply loading new parameters"
+    command="$load_command $FILE $NAMESPACE"
+    eval $command
+  else           
+
+    #Dumps the current parameters in the server
+    command="$dump_command current.txt $NAMESPACE"
+    eval $command
+
+    #Temporarly loads the new parameters
+    command="$load_command $FILE $NAMESPACE"
+    eval $command
+
+    #Dumps the new parameters
+    command="$dump_command new.txt $NAMESPACE"
+    eval $command
+
+    #Searching the new parameters in the current ones
+    command="grep -F -f current.txt new.txt > search.txt"
+    eval $command
+
+    #Difference berween the new parameters and the search results
+    command="diff new.txt search.txt > diff.txt"
+    eval $command
+
+    if [ -s "diff.txt" ]
+    then
+	echo "Appending new parameters."
+        # do something as file has data
+
+        #Appends both files
+        cat current.txt >> new.txt
+
+        #Loads all the new parameters
+        command="$load_command new.txt $NAMESPACE"
+        eval $command
+
+    else
+	echo "Parameters are already loaded. Resetting old parameters"
+        # do something as file is empty
+
+        #Loads all the old parameters
+        command="$load_command current.txt $NAMESPACE"
+        eval $command
+    fi
+
+    #Remove temporary files
+    rm new.txt
+    rm current.txt
+    rm search.txt
+    rm diff.txt
+
+  fi
+
+fi
+
+
+
+
+

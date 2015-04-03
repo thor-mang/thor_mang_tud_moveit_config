@@ -1,4 +1,3 @@
-controller_list: 
  - name: /thor_mang/head_traj_controller
    action_ns: follow_joint_trajectory
    type: FollowJointTrajectory

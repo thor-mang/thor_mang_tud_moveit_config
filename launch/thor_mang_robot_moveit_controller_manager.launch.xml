@@ -4,7 +4,13 @@
   <arg name="moveit_controller_manager" default="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
   <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
 
-  <!-- load controller_list -->
-  <rosparam file="$(find thor_mang_tud_moveit_config)/config/controllers.yaml" command="load"/>
+  <!-- load controller_list
+  <rosparam file="$(find thor_mang_tud_moveit_config)/config/controllers.yaml" command="load"/>-->
+
+<!--  Changed to load by appending parameters-->
+  <node name    = "rosparam_append_node"
+        pkg     = "thor_mang_tud_moveit_config"
+        type    = "rosparam_append"
+        args    = "$(find thor_mang_tud_moveit_config)/config/controllers.yaml  /move_group/controller_list"/>
   
 </launch>
