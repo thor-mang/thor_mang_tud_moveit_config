@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   URDF:
-    package: thor_mang_description
-    relative_path: robots/thor_mang_tud_simple.urdf.xacro
+    package: thor_mang_tud_description
+    relative_path: robots/thor_mang_hands_tud_simple.urdf.xacro
   SRDF:
     relative_path: config/thor_mang_robot.srdf
   CONFIG:
