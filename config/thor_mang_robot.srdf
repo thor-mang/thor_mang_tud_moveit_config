@@ -158,7 +158,7 @@
     <disable_collisions link1="l_arm_elbow" link2="l_arm_shoulder_yaw" reason="Adjacent" />
     <disable_collisions link1="l_arm_elbow" link2="l_arm_wrist_roll" reason="Default" />
     <disable_collisions link1="l_arm_elbow" link2="l_arm_wrist_yaw" reason="Adjacent" />
-    <disable_collisions link1="l_arm_elbow" link2="l_arm_wrist_yaw2" reason="Never" />
+    <disable_collisions link1="l_arm_elbow" link2="l_hand" reason="Never" />
     <disable_collisions link1="l_arm_shoulder_pitch" link2="l_arm_shoulder_roll" reason="Adjacent" />
     <disable_collisions link1="l_arm_shoulder_pitch" link2="l_arm_shoulder_yaw" reason="Default" />
     <disable_collisions link1="l_arm_shoulder_pitch" link2="l_leg_hip_roll" reason="Never" />
@@ -194,8 +194,8 @@
     <disable_collisions link1="l_arm_shoulder_yaw" link2="r_arm_shoulder_roll" reason="Never" />
     <disable_collisions link1="l_arm_shoulder_yaw" link2="r_leg_hip_yaw" reason="Never" />
     <disable_collisions link1="l_arm_wrist_roll" link2="l_arm_wrist_yaw" reason="Adjacent" />
-    <disable_collisions link1="l_arm_wrist_roll" link2="l_arm_wrist_yaw2" reason="Adjacent" />
-    <disable_collisions link1="l_arm_wrist_yaw" link2="l_arm_wrist_yaw2" reason="Never" />
+    <disable_collisions link1="l_arm_wrist_roll" link2="l_hand" reason="Adjacent" />
+    <disable_collisions link1="l_arm_wrist_yaw" link2="l_hand" reason="Never" />
     <disable_collisions link1="l_foot" link2="l_leg_ankle_roll" reason="Adjacent" />
     <disable_collisions link1="l_foot" link2="r_foot" reason="Default" />
     <disable_collisions link1="l_leg_ankle_roll" link2="l_leg_shank" reason="Adjacent" />
@@ -243,7 +243,7 @@
     <disable_collisions link1="r_arm_elbow" link2="r_arm_shoulder_yaw" reason="Adjacent" />
     <disable_collisions link1="r_arm_elbow" link2="r_arm_wrist_roll" reason="Default" />
     <disable_collisions link1="r_arm_elbow" link2="r_arm_wrist_yaw" reason="Adjacent" />
-    <disable_collisions link1="r_arm_elbow" link2="r_arm_wrist_yaw2" reason="Never" />
+    <disable_collisions link1="r_arm_elbow" link2="r_hand" reason="Never" />
     <disable_collisions link1="r_arm_shoulder_pitch" link2="r_arm_shoulder_roll" reason="Adjacent" />
     <disable_collisions link1="r_arm_shoulder_pitch" link2="r_arm_shoulder_yaw" reason="Default" />
     <disable_collisions link1="r_arm_shoulder_pitch" link2="r_leg_hip_roll" reason="Never" />
@@ -260,8 +260,8 @@
     <disable_collisions link1="r_arm_shoulder_roll" link2="waist" reason="Never" />
     <disable_collisions link1="r_arm_shoulder_roll" link2="waist_hokuyo_laser_frame" reason="Never" />
     <disable_collisions link1="r_arm_wrist_roll" link2="r_arm_wrist_yaw" reason="Adjacent" />
-    <disable_collisions link1="r_arm_wrist_roll" link2="r_arm_wrist_yaw2" reason="Adjacent" />
-    <disable_collisions link1="r_arm_wrist_yaw" link2="r_arm_wrist_yaw2" reason="Never" />
+    <disable_collisions link1="r_arm_wrist_roll" link2="r_hand" reason="Adjacent" />
+    <disable_collisions link1="r_arm_wrist_yaw" link2="r_hand" reason="Never" />
     <disable_collisions link1="r_foot" link2="r_leg_ankle_roll" reason="Adjacent" />
     <disable_collisions link1="r_leg_ankle_roll" link2="r_leg_shank" reason="Adjacent" />
     <disable_collisions link1="r_leg_hip_roll" link2="r_leg_hip_yaw" reason="Adjacent" />
