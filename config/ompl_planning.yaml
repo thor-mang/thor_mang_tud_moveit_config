@@ -65,7 +65,6 @@ head_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(head_pan,head_tilt)
   longest_valid_segment_fraction: 0.05
 torso_group:
   planner_configs:
@@ -80,7 +79,6 @@ torso_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(waist_pan,waist_tilt)
   longest_valid_segment_fraction: 0.05
 l_arm_group:
   planner_configs:
@@ -95,7 +93,6 @@ l_arm_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(l_shoulder_pitch,l_shoulder_roll)
   longest_valid_segment_fraction: 0.05
 r_arm_group:
   planner_configs:
@@ -110,7 +107,6 @@ r_arm_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(r_shoulder_pitch,r_shoulder_roll)
   longest_valid_segment_fraction: 0.05
 both_arms_group:
   planner_configs:
@@ -125,7 +121,6 @@ both_arms_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(l_shoulder_pitch,r_shoulder_pitch)
   longest_valid_segment_fraction: 0.05  
 r_leg_group:
   planner_configs:
@@ -140,7 +135,6 @@ r_leg_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(r_hip_yaw,r_hip_roll)
   longest_valid_segment_fraction: 0.05
 l_leg_group:
   planner_configs:
@@ -155,7 +149,6 @@ l_leg_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(l_hip_yaw,l_hip_roll)
   longest_valid_segment_fraction: 0.05
 l_arm_with_torso_group:
   planner_configs:
@@ -170,7 +163,6 @@ l_arm_with_torso_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(waist_pan,waist_tilt)
   longest_valid_segment_fraction: 0.05
 r_arm_with_torso_group:
   planner_configs:
@@ -185,7 +177,6 @@ r_arm_with_torso_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(waist_pan,waist_tilt)
   longest_valid_segment_fraction: 0.05
 whole_body_group:
   planner_configs:
@@ -200,7 +191,6 @@ whole_body_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(l_hip_yaw,l_hip_roll)
   longest_valid_segment_fraction: 0.05
 all_appendages_group:
   planner_configs:
@@ -215,7 +205,6 @@ all_appendages_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(l_hip_yaw,l_hip_roll)
   longest_valid_segment_fraction: 0.05
 lower_body_group:
   planner_configs:
@@ -230,5 +219,4 @@ lower_body_group:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(waist_pan,waist_tilt)
   longest_valid_segment_fraction: 0.05
