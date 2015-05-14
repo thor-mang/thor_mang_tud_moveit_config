@@ -67,6 +67,11 @@
         <joint name="l_ankle_pitch" />
         <joint name="l_ankle_roll" />
     </group>
+     <group name="lower_body_group">
+        <group name="torso_group" />
+        <group name="l_leg_group" />
+        <group name="r_leg_group" />
+    </group>
     <group name="l_arm_with_torso_group">
         <group name="torso_group" />
         <group name="l_arm_group" />
