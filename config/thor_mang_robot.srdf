@@ -305,6 +305,6 @@
     <!--Custom disabled collisions. Possibly needs to manually be re-added after running setup assistant.-->
     <disable_collisions link1="pelvis" link2="l_leg_thigh" reason="Never" />
     <disable_collisions link1="pelvis" link2="r_leg_thigh" reason="Never" />
-    <disable_collisions link1="utorso" link2="poking_stick" reason="Adjacent" />
-    <disable_collisions link1="pelvis" link2="poking_stick" reason="Adjacent" />
+    <disable_collisions link1="utorso" link2="left_poking_stick" reason="Adjacent" />
+    <disable_collisions link1="pelvis" link2="left_poking_stick" reason="Adjacent" />
 </robot>

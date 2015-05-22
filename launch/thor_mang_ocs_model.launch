@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<launch>
+  
+  <include file="$(find thor_mang_tud_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+  
+  <!--  
+  <node pkg="flor_moveit_ocs_model" type="moveit_ocs_model_node" name="moveit_ocs_model_node" respawn="true" >
+    <rosparam command="load" file="$(find vigir_atlas_moveit_config)/config/kinematics.yaml"/>
+  </node>
+  -->
+
+  <node pkg="vigir_ocs_robot_model" type="moveit_ocs_model_node" name="moveit_ocs_model_node" respawn="true" >
+    <rosparam command="load" file="$(find thor_mang_tud_moveit_config)/config/kinematics.yaml"/>
+  </node>
+
+</launch>

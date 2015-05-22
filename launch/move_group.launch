@@ -59,8 +59,9 @@
 				      move_group/MoveGroupStateValidationService
 				      move_group/MoveGroupGetPlanningSceneService
 				      move_group/ClearOctomapService
-				      move_group/ContinuousReplanningCapability
 				      move_group/MoveGroupManipulationAction
+				      move_group/OctomapAccessCapability
+                                      move_group/RobotStateRetrievalCapability
 				      " />
 
     <!-- Publish the planning scene of the physical robot so that rviz plugin can know actual robot -->
