@@ -50,6 +50,13 @@
         <joint name="r_wrist_yaw1" />
         <joint name="r_wrist_roll" />
         <joint name="r_wrist_yaw2" />
+        <joint name="waist_pan" />
+        <joint name="waist_tilt" />
+    </group>
+    <group name="both_arms_with_torso_group">
+        <group name="l_arm_group" />
+        <group name="r_arm_group" />
+        <group name="torso_group" />
     </group>
     <group name="r_leg_group">
         <joint name="r_hip_yaw" />
