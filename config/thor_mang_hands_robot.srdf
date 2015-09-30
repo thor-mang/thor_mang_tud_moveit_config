@@ -235,9 +235,9 @@
     <disable_collisions link1="l_arm_elbow" link2="l_arm_wrist_yaw" reason="Adjacent" />
     <disable_collisions link1="l_arm_elbow" link2="l_hand" reason="Never" />
     <disable_collisions link1="l_arm_elbow" link2="l_f0_link_0" reason="Never" />
-    <disable_collisions link1="l_arm_elbow" link2="l_f0_link_1" reason="Never" />
+<!--    <disable_collisions link1="l_arm_elbow" link2="l_f0_link_1" reason="Never" />-->
     <disable_collisions link1="l_arm_elbow" link2="l_f1_link_0" reason="Never" />
-    <disable_collisions link1="l_arm_elbow" link2="l_f1_link_1" reason="Never" />
+<!--    <disable_collisions link1="l_arm_elbow" link2="l_f1_link_1" reason="Never" />-->
     <disable_collisions link1="l_arm_elbow" link2="l_palm" reason="Never" />
     <disable_collisions link1="l_arm_elbow" link2="r_arm_shoulder_pitch" reason="Never" />
     <disable_collisions link1="l_arm_elbow" link2="r_arm_shoulder_roll" reason="Never" />
@@ -279,31 +279,31 @@
     <disable_collisions link1="l_arm_wrist_roll" link2="l_arm_wrist_yaw" reason="Adjacent" />
     <disable_collisions link1="l_arm_wrist_roll" link2="l_hand" reason="Adjacent" />
     <disable_collisions link1="l_arm_wrist_roll" link2="l_f0_link_0" reason="Never" />
-    <disable_collisions link1="l_arm_wrist_roll" link2="l_f0_link_1" reason="Never" />
+<!--    <disable_collisions link1="l_arm_wrist_roll" link2="l_f0_link_1" reason="Never" />-->
     <disable_collisions link1="l_arm_wrist_roll" link2="l_f1_link_0" reason="Never" />
-    <disable_collisions link1="l_arm_wrist_roll" link2="l_f1_link_1" reason="Never" />
+<!--    <disable_collisions link1="l_arm_wrist_roll" link2="l_f1_link_1" reason="Never" />-->
     <disable_collisions link1="l_arm_wrist_roll" link2="l_palm" reason="Never" />
     <disable_collisions link1="l_arm_wrist_yaw" link2="l_hand" reason="Never" />
     <disable_collisions link1="l_arm_wrist_yaw" link2="l_f0_link_0" reason="Never" />
-    <disable_collisions link1="l_arm_wrist_yaw" link2="l_f0_link_1" reason="Never" />
+<!--    <disable_collisions link1="l_arm_wrist_yaw" link2="l_f0_link_1" reason="Never" />-->
     <disable_collisions link1="l_arm_wrist_yaw" link2="l_f1_link_0" reason="Never" />
-    <disable_collisions link1="l_arm_wrist_yaw" link2="l_f1_link_1" reason="Never" />
+<!--    <disable_collisions link1="l_arm_wrist_yaw" link2="l_f1_link_1" reason="Never" />-->
     <disable_collisions link1="l_arm_wrist_yaw" link2="l_palm" reason="Never" />
     <disable_collisions link1="l_hand" link2="l_f0_link_0" reason="Adjacent" />
-    <disable_collisions link1="l_hand" link2="l_f0_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="l_hand" link2="l_f0_link_1" reason="Adjacent" />-->
     <disable_collisions link1="l_hand" link2="l_f1_link_0" reason="Adjacent" />
-    <disable_collisions link1="l_hand" link2="l_f1_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="l_hand" link2="l_f1_link_1" reason="Adjacent" />-->
     <disable_collisions link1="l_hand" link2="l_palm" reason="Adjacent" />
-    <disable_collisions link1="l_f0_link_0" link2="l_f0_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="l_f0_link_0" link2="l_f0_link_1" reason="Adjacent" />-->
     <disable_collisions link1="l_f0_link_0" link2="l_f1_link_0" reason="Adjacent" />
-    <disable_collisions link1="l_f0_link_0" link2="l_f1_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="l_f0_link_0" link2="l_f1_link_1" reason="Adjacent" />-->
     <disable_collisions link1="l_f0_link_0" link2="l_palm" reason="Adjacent" />
-    <disable_collisions link1="l_f0_link_1" link2="l_f1_link_0" reason="Adjacent" />
-    <disable_collisions link1="l_f0_link_1" link2="l_f1_link_1" reason="Adjacent" />
-    <disable_collisions link1="l_f0_link_1" link2="l_palm" reason="Adjacent" />
-    <disable_collisions link1="l_f1_link_0" link2="l_f1_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="l_f0_link_1" link2="l_f1_link_0" reason="Adjacent" />-->
+<!--    <disable_collisions link1="l_f0_link_1" link2="l_f1_link_1" reason="Adjacent" />-->
+<!--    <disable_collisions link1="l_f0_link_1" link2="l_palm" reason="Adjacent" />-->
+<!--    <disable_collisions link1="l_f1_link_0" link2="l_f1_link_1" reason="Adjacent" />-->
     <disable_collisions link1="l_f1_link_0" link2="l_palm" reason="Adjacent" />
-    <disable_collisions link1="l_f1_link_1" link2="l_palm" reason="Adjacent" />
+<!--    <disable_collisions link1="l_f1_link_1" link2="l_palm" reason="Adjacent" />-->
     <disable_collisions link1="l_foot" link2="l_leg_ankle_roll" reason="Adjacent" />
     <disable_collisions link1="l_foot" link2="r_foot" reason="Default" />
     <disable_collisions link1="l_leg_ankle_roll" link2="l_leg_shank" reason="Adjacent" />
@@ -352,9 +352,9 @@
     <disable_collisions link1="r_arm_elbow" link2="r_arm_wrist_yaw" reason="Adjacent" />
     <disable_collisions link1="r_arm_elbow" link2="r_hand" reason="Never" />
     <disable_collisions link1="r_arm_elbow" link2="r_f0_link_0" reason="Never" />
-    <disable_collisions link1="r_arm_elbow" link2="r_f0_link_1" reason="Never" />
+<!--    <disable_collisions link1="r_arm_elbow" link2="r_f0_link_1" reason="Never" />-->
     <disable_collisions link1="r_arm_elbow" link2="r_f1_link_0" reason="Never" />
-    <disable_collisions link1="r_arm_elbow" link2="r_f1_link_1" reason="Never" />
+<!--    <disable_collisions link1="r_arm_elbow" link2="r_f1_link_1" reason="Never" />-->
     <disable_collisions link1="r_arm_elbow" link2="r_palm" reason="Never" />
     <disable_collisions link1="r_arm_shoulder_pitch" link2="r_arm_shoulder_roll" reason="Adjacent" />
     <disable_collisions link1="r_arm_shoulder_pitch" link2="r_arm_shoulder_yaw" reason="Default" />
@@ -374,31 +374,31 @@
     <disable_collisions link1="r_arm_wrist_roll" link2="r_arm_wrist_yaw" reason="Adjacent" />
     <disable_collisions link1="r_arm_wrist_roll" link2="r_hand" reason="Adjacent" />
     <disable_collisions link1="r_arm_wrist_roll" link2="r_f0_link_0" reason="Never" />
-    <disable_collisions link1="r_arm_wrist_roll" link2="r_f0_link_1" reason="Never" />
+<!--    <disable_collisions link1="r_arm_wrist_roll" link2="r_f0_link_1" reason="Never" />-->
     <disable_collisions link1="r_arm_wrist_roll" link2="r_f1_link_0" reason="Never" />
-    <disable_collisions link1="r_arm_wrist_roll" link2="r_f1_link_1" reason="Never" />
+<!--    <disable_collisions link1="r_arm_wrist_roll" link2="r_f1_link_1" reason="Never" />-->
     <disable_collisions link1="r_arm_wrist_roll" link2="r_palm" reason="Never" />
     <disable_collisions link1="r_arm_wrist_yaw" link2="r_hand" reason="Never" />
     <disable_collisions link1="r_arm_wrist_yaw" link2="r_f0_link_0" reason="Never" />
-    <disable_collisions link1="r_arm_wrist_yaw" link2="r_f0_link_1" reason="Never" />
+<!--    <disable_collisions link1="r_arm_wrist_yaw" link2="r_f0_link_1" reason="Never" />-->
     <disable_collisions link1="r_arm_wrist_yaw" link2="r_f1_link_0" reason="Never" />
-    <disable_collisions link1="r_arm_wrist_yaw" link2="r_f1_link_1" reason="Never" />
+<!--    <disable_collisions link1="r_arm_wrist_yaw" link2="r_f1_link_1" reason="Never" />-->
     <disable_collisions link1="r_arm_wrist_yaw" link2="r_palm" reason="Never" />
     <disable_collisions link1="r_hand" link2="r_f0_link_0" reason="Adjacent" />
-    <disable_collisions link1="r_hand" link2="r_f0_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="r_hand" link2="r_f0_link_1" reason="Adjacent" />-->
     <disable_collisions link1="r_hand" link2="r_f1_link_0" reason="Adjacent" />
-    <disable_collisions link1="r_hand" link2="r_f1_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="r_hand" link2="r_f1_link_1" reason="Adjacent" />-->
     <disable_collisions link1="r_hand" link2="r_palm" reason="Adjacent" />
-    <disable_collisions link1="r_f0_link_0" link2="r_f0_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="r_f0_link_0" link2="r_f0_link_1" reason="Adjacent" />-->
     <disable_collisions link1="r_f0_link_0" link2="r_f1_link_0" reason="Adjacent" />
-    <disable_collisions link1="r_f0_link_0" link2="r_f1_link_1" reason="Adjacent" />
+<!--    <disable_collisions link1="r_f0_link_0" link2="r_f1_link_1" reason="Adjacent" />-->
     <disable_collisions link1="r_f0_link_0" link2="r_palm" reason="Adjacent" />
-    <disable_collisions link1="r_f0_link_1" link2="r_f1_link_0" reason="Adjacent" />
+<!--    <disable_collisions link1="r_f0_link_1" link2="r_f1_link_0" reason="Adjacent" />
     <disable_collisions link1="r_f0_link_1" link2="r_f1_link_1" reason="Adjacent" />
-    <disable_collisions link1="r_f0_link_1" link2="r_palm" reason="Adjacent" />
-    <disable_collisions link1="r_f1_link_0" link2="r_f1_link_1" reason="Adjacent" />
+    <disable_collisions link1="r_f0_link_1" link2="r_palm" reason="Adjacent" />-->
+<!--    <disable_collisions link1="r_f1_link_0" link2="r_f1_link_1" reason="Adjacent" />-->
     <disable_collisions link1="r_f1_link_0" link2="r_palm" reason="Adjacent" />
-    <disable_collisions link1="r_f1_link_1" link2="r_palm" reason="Adjacent" />
+<!--    <disable_collisions link1="r_f1_link_1" link2="r_palm" reason="Adjacent" />-->
     <disable_collisions link1="r_foot" link2="r_leg_ankle_roll" reason="Adjacent" />
     <disable_collisions link1="r_leg_ankle_roll" link2="r_leg_shank" reason="Adjacent" />
     <disable_collisions link1="r_leg_hip_roll" link2="r_leg_hip_yaw" reason="Adjacent" />
