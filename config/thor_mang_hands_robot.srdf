@@ -101,9 +101,9 @@
     </group>
     <group name="l_hand_group">
         <joint name="l_f0_j0" />
-        <joint name="l_f0_j1" />
+        <!--<joint name="l_f0_j1" />-->
         <joint name="l_f1_j0" />
-        <joint name="l_f1_j1" />
+        <!--<joint name="l_f1_j1" />-->
     </group>
     <group name="r_hand_group">
         <joint name="r_f0_j0" />
